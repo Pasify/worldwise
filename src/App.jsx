@@ -1,6 +1,9 @@
+import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { useEffect, useState } from "react";
 import { CitiesProvider } from "./contexts/CitiesContext";
+import { AuthProvider } from "./contexts/FakeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
@@ -8,12 +11,13 @@ import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import Login from "./pages/Login";
+
+// const Homepage = lazy()
+
 import CityList from "./components/CityList";
 import CountriesList from "./components/CountryList";
 import City from "./components/City";
 import Form from "./components/Form";
-import { AuthProvider } from "./contexts/FakeAuthContext";
-import ProtectedRoute from "./pages/ProtectedRoute";
 
 //try barrel import later on
 

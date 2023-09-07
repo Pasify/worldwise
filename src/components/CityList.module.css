@@ -29,5 +29,6 @@
 
 .Ul {
   list-style-type: none;
-  overflow-y: scroll;
+  overflow-y: auto;
+  padding-right: 1rem;
 }
