@@ -11,7 +11,7 @@ const FAKE_USER = {
 function User() {
   const navigate = useNavigate();
   const { user, logout } = useAuth();
-  console.log(user);
+  
   // const user = FAKE_USER;
 
   function handleClick() {
