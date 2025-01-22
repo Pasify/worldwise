@@ -1,5 +1,5 @@
 import MenuNavigation from "../components/MenuNavigation";
-// import PageNav from "../components/MenuNavigation";
+
 import styles from "./Product.module.css";
 
 export default function Product() {

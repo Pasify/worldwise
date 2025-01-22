@@ -1,4 +1,3 @@
-import PageNav from "../components/MenuNavigation";
 import styles from "./Login.module.css";
 import { useEffect, useState } from "react";
 import { useAuth } from "../contexts/FakeAuthContext";
