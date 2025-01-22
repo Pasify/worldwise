@@ -1,10 +1,11 @@
-import PageNav from "../components/pageNav";
+import PageNav from "../components/MenuNavigation";
 import styles from "./Login.module.css";
 import { useEffect, useState } from "react";
 import { useAuth } from "../contexts/FakeAuthContext";
 // import { Handler } from "leaflet";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import MenuNavigation from "../components/MenuNavigation";
 export default function Login() {
   const { login, isAuthenticated } = useAuth();
 
@@ -28,7 +29,7 @@ export default function Login() {
   );
   return (
     <main className={styles.login}>
-      <PageNav />
+      <MenuNavigation />
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
